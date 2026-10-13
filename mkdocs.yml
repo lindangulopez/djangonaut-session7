@@ -1,0 +1,60 @@
+site_name: Djangonaut Space, Session 7
+site_description: What I am doing as a Djangonaut, October to December 2026, tutorials first, then the Django ORM and accessibility.
+site_author: Linda Angulo Lopez
+site_url: https://lindangulopez.github.io/djangonaut-session7/
+repo_url: https://github.com/lindangulopez/djangonaut-session7
+repo_name: lindangulopez/djangonaut-session7
+edit_uri: edit/main/docs/
+copyright: Linda Angulo Lopez, October 2026. Written with the help of Claude (Anthropic).
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Tutorials: tutorials.md
+  - Learning path: learning-path.md
+  - ORM watchlist: orm-watchlist.md
+  - ORM track: orm-track.md
+  - Accessibility track: accessibility-track.md
+  - Reading list: reading-list.md
+  - Setup: setup.md
