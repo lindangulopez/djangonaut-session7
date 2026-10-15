@@ -9,6 +9,15 @@
 5. [Unit tests](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/): how to run Django's own test suite.
 6. [Triaging tickets](https://docs.djangoproject.com/en/dev/internals/contributing/triaging-tickets/): what the stages and flags on a ticket mean.
 
+## The ORM, from the inside
+
+- ["Demystifying the Django ORM"](https://www.youtube.com/watch?v=IakfTkQIuFw), Simon Charette's talk to Djangonaut Space Session 3 (2024, 44 minutes), with [slides](http://charettes.name/djangonauts2024/). How a QuerySet becomes SQL and comes back as model instances, in four phases: resolving, compilation, execution, construction. His tip from the questions: use `git blame` on a line to walk back to its pull request and ticket.
+
+## Accessibility tools
+
+- [An Orca screen reader tutorial](https://diff.wikimedia.org/2020/07/02/an-orca-screen-reader-tutorial/) (Wikimedia, 2020): installing and using Orca, the screen reader on Linux, as a sighted developer.
+- [Accessibility Insights for Web](https://accessibilityinsights.io/docs/web/overview/): the browser extension I use to check a page before and after a change.
+
 ## Reviewing pull requests
 
 - [Getting started with Django PR reviews](https://gist.github.com/ontowhee/a86b146541f849e98ff77c447e69c823), a gist with a method I intend to follow.
