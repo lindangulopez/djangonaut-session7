@@ -42,6 +42,7 @@ The choice between the two is open with my Navigator. Both stay on this site unt
 
 ## Status
 
+- 15 October 2026: first accessibility issue assigned to me, [djangoproject.com #2904](https://github.com/django/djangoproject.com/issues/2904), the contact form's e-mail field. See [Accessibility track](accessibility-track.md).
 - 13 October 2026: week 1. Plan published. Tutorial part 1 not started.
 
 How do you learn a codebase of this size: from the tutorial outwards, or from one bug inwards?
