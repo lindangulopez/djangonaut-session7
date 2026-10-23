@@ -42,6 +42,7 @@ The choice between the two is open with my Navigator. Both stay on this site unt
 
 ## Status
 
+- 23 October 2026: #2904 fixed on a branch, with a test that failed before the fix and passes after it; pull request next. See [Accessibility track](accessibility-track.md#update-23-october-2026-fixed-on-a-branch-pull-request-next).
 - 15 October 2026: first accessibility issue assigned to me, [djangoproject.com #2904](https://github.com/django/djangoproject.com/issues/2904), the contact form's e-mail field. See [Accessibility track](accessibility-track.md).
 - 13 October 2026: week 1. Plan published. Tutorial part 1 not started.
 
