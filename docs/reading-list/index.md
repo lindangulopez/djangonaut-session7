@@ -1,10 +1,18 @@
 # Reading list
 
+This page has two parts: my **guides**, just below, then the **reading list** itself.
+
 ## Guides
 
-Step-by-step guides I wrote while working on an issue, with my answers.
+!!! abstract "My guides: one per issue, step by step, with my answers"
 
-- [Issue #2904, step by step](guide-2904.md): the contact form's E-mail field and `autocomplete`, from reproducing the bug to pull request #2924.
+    | Guide | What it covers |
+    | --- | --- |
+    | **[Issue #2904, step by step](guide-2904.md)** | The contact form's E-mail field and `autocomplete`: from reproducing the bug to [pull request #2924](https://github.com/django/djangoproject.com/pull/2924). |
+
+    The guides are also in the menu on the left, under **Guides**.
+
+## Django documentation, in reading order
 
 ## Django documentation, in reading order
 
