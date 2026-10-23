@@ -16,7 +16,7 @@
 ## Accessibility tools
 
 - [An Orca screen reader tutorial](https://diff.wikimedia.org/2020/07/02/an-orca-screen-reader-tutorial/) (Wikimedia, 2020): installing and using Orca, the screen reader on Linux, as a sighted developer.
-- [Accessibility Insights for Web](https://accessibilityinsights.io/docs/web/overview/): the browser extension I use to check a page before and after a change.
+- [Accessibility Insights for Web](https://accessibilityinsights.io/docs/web/overview/): the browser extension I use to check a page before and after a change, in Microsoft Edge. Watched: [Introduction to Accessibility Insights for Web](https://www.youtube.com/watch?v=XVvBJoEe4Is) (Accessibility Insights channel), a walk through the extension.
 
 ## Reviewing pull requests
 

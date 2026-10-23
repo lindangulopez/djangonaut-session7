@@ -43,7 +43,7 @@ name = forms.CharField(
 
 How: I cloned my fork (a shallow clone with `--depth 50`, because the full history is large), created the branch `contact-email-input-autocomplete` from `upstream/main`, and ran everything in Docker. I wrote the code with Claude's help, so I will tick that box in the pull request's AI Assistance Disclosure.
 
-Next: check the page in the browser with the phone emulator, Accessibility Insights and Orca, then open the pull request.
+**Pull request opened, 23 October 2026: [#2924](https://github.com/django/djangoproject.com/pull/2924).** Next: answer the review comments.
 
 ## Tickets I could take over
 
@@ -71,6 +71,6 @@ The accessibility review of Django's ticket tracker, [code.djangoproject.com iss
 
 (ii) A screen reader test environment on my own machine, following [Setting up a screen reader testing environment](https://www.sarasoueidan.com/blog/testing-environment-setup/). On Linux this means [Orca](https://diff.wikimedia.org/2020/07/02/an-orca-screen-reader-tutorial/).
 
-(iii) The [Accessibility Insights](https://accessibilityinsights.io/downloads/) browser plugin, to check a page before and after a patch. Installed on 15 October 2026.
+(iii) The [Accessibility Insights](https://accessibilityinsights.io/downloads/) browser plugin, to check a page before and after a patch. Installed on 15 October 2026, as a Microsoft Edge extension. I learned it from [Introduction to Accessibility Insights for Web](https://www.youtube.com/watch?v=XVvBJoEe4Is), the tool's own video.
 
 Which of these would you give to someone who has finished the tutorial and nothing more?

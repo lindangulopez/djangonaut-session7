@@ -8,7 +8,7 @@
 | [lindangulopez/django-local-test](https://github.com/lindangulopez/django-local-test) | My fork of a small starter project for running code against a local copy of Django. Notes per ticket in `notes/`, one `ticket-*` branch per reproduction, a `boilerplate` branch to start from. |
 | [lindangulopez/code.djangoproject.com](https://github.com/lindangulopez/code.djangoproject.com) | My fork of the configuration of Django's ticket tracker, for the accessibility audit. |
 
-## To do in week 3
+## Later, if there is time: PostgreSQL with statement logging
 
 None of this has been run yet. The commands are the plan, and I will correct them here once they work.
 
@@ -24,7 +24,7 @@ docker logs -f pg-django
 
 (iii) Point the polls project at it and run `python manage.py migrate`. The log should show each `BEGIN`, `CREATE TABLE`, `COMMIT` and the `INSERT INTO django_migrations`.
 
-## To do in week 5
+## Later, if there is time: the executor tests
 
 Run the two existing tests for the migration executor, from the `tests/` directory of the Django clone:
 
