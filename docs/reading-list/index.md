@@ -1,8 +1,14 @@
 # Reading list
 
+## Guides
+
+Step-by-step guides I wrote while working on an issue, with my answers.
+
+- [Issue #2904, step by step](guide-2904.md): the contact form's E-mail field and `autocomplete`, from reproducing the bug to pull request #2924.
+
 ## Django documentation, in reading order
 
-1. [The Django tutorial](https://docs.djangoproject.com/en/stable/intro/tutorial01/), parts 1 to 8. Checklist on [Tutorials](tutorials.md).
+1. [The Django tutorial](https://docs.djangoproject.com/en/stable/intro/tutorial01/), parts 1 to 8. Checklist on [Tutorials](../tutorials.md).
 2. [Models](https://docs.djangoproject.com/en/stable/topics/db/models/) and [Making queries](https://docs.djangoproject.com/en/stable/topics/db/queries/).
 3. [Migrations](https://docs.djangoproject.com/en/stable/topics/migrations/).
 4. [Database transactions](https://docs.djangoproject.com/en/stable/topics/db/transactions/).

@@ -43,7 +43,7 @@ name = forms.CharField(
 
 How: I cloned my fork (a shallow clone with `--depth 50`, because the full history is large), created the branch `contact-email-input-autocomplete` from `upstream/main`, and ran everything in Docker. I wrote the code with Claude's help, so I will tick that box in the pull request's AI Assistance Disclosure.
 
-**Pull request opened, 23 October 2026: [#2924](https://github.com/django/djangoproject.com/pull/2924).** Next: answer the review comments. Every step, with my answers: [Guide: issue #2904, step by step](guide-2904.md).
+**Pull request opened, 23 October 2026: [#2924](https://github.com/django/djangoproject.com/pull/2924).** Next: answer the review comments. Every step, with my answers: [Guide: issue #2904, step by step](reading-list/guide-2904.md).
 
 ## Tickets I could take over
 
