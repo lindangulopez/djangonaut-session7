@@ -1,29 +1,29 @@
 # Learning path
 
-Eight weeks, about 4 hours each. Every week ends on one output. The week names are the programme's own.
+**Reset on 23 October 2026: I can only really work on weekends.** Seven weekends are left, from 24 October to 6 December, about 4 hours each. Every weekend ends on one output. The week names are the programme's own. The weekend of 17–18 October went by without tutorial work, so the tutorials start again from part 1.
 
-| Week | Phase | What I do | Output |
+| Weekend | Programme week | What I do | Output |
 | --- | --- | --- | --- |
-| **1, 12 Oct**, Blast off! | Tutorials | Tutorial parts 1 and 2: project, models, admin. Light week. | Polls project running locally |
-| **2, 19 Oct**, Leaving the atmosphere! | Tutorials | Parts 3 to 5: views, forms, tests. | Polls app with passing tests |
-| **3, 26 Oct**, Into orbit! | Tutorials | Parts 6 to 8: static files, admin, third-party packages. Django clone brought up to date, PostgreSQL in Docker with statement logging. | Polls project in `django-local-test`, migrating on PostgreSQL |
-| **4, 2 Nov**, Avoiding asteroids! | Tutorials | Topic guides: Models, Making queries, Migrations, Database transactions. Light week. | Note: what `migrate` does, in my own words |
-| **5, 9 Nov**, Traveling amongst the stars! | Contribute | Reproduce ticket #37416 on PostgreSQL and SQLite. Read `apply_migration` and the two existing tests. | Statement logs, and a note on the call sequence |
-| **6, 16 Nov**, Talking to extraterrestrials | Contribute | Write a failing regression test. | A test that fails on main, on a branch of my fork |
-| **7, 23 Nov**, Collecting samples! | Contribute | Review the reporter's pull request on two databases, or offer the test. | One review, or a draft pull request |
-| **8, 30 Nov**, Returning home | Wrap up | Follow-up on review comments. Blog post. | Blog post published |
+| **24–25 Oct** | 2, Leaving the atmosphere! | Tutorial parts 1 and 2: project, models, admin. | Polls project running locally |
+| **31 Oct–1 Nov** | 3, Into orbit! | Light weekend. Part 3: views and templates. | Polls pages showing in the browser |
+| **7–8 Nov** | 4, Avoiding asteroids! | Parts 4 and 5: forms and tests. | Polls app with passing tests |
+| **14–15 Nov** | 5, Traveling amongst the stars! | Parts 6 to 8: static files, admin, third-party packages. | Polls project complete, all eight parts |
+| **21–22 Nov** | 6, Talking to extraterrestrials | Topic guides: Models, Making queries, Migrations. Database transactions if there is time. | Note: what `migrate` does, in my own words |
+| **28–29 Nov** | 7, Collecting samples! | Contribute: answer review comments on [pull request #2924](https://github.com/django/djangoproject.com/pull/2924). Read ticket #37416 again, with what the guides taught. | Pull request updated, or merged |
+| **5–6 Dec** | 8, Returning home | Wrap up. Blog post. | Blog post published |
 
-Weeks 5 to 7 are written for the [ORM track](orm-track.md). If the [accessibility track](accessibility-track.md) is chosen, the same three weeks become: (i) reproduce one admin ticket with a screen reader, (ii) review its pull request, (iii) take the patch over if its author agrees.
+## The contribution came first
 
-Alongside, from week 1: the [ORM watchlist](orm-watchlist.md), read once a week.
+The plan was to contribute only after the tutorials. Issue [#2904](https://github.com/django/djangoproject.com/issues/2904) was assigned to me in week 1, so it went first: [pull request #2924](https://github.com/django/djangoproject.com/pull/2924) was opened on 23 October. See [Accessibility track](accessibility-track.md). Review comments can arrive on any day; I answer them at the weekend.
+
+With weekends only, the [ORM track](orm-track.md) becomes reading: ticket #37416 stays on the [ORM watchlist](orm-watchlist.md), without a reproduction of my own.
 
 ## If the plan breaks
 
-- **The tutorials take longer than four weeks.** Measure: they keep the priority. The contribution shrinks to the reproduction and one review.
-- **Ticket #37416 is closed as invalid or wontfix.** Measure: the reading of weeks 4 and 5 still stands, it is the same code. The contribution moves to the accessibility track.
-- **The reporter's pull request is merged before I have reproduced anything.** Measure: I review it after the fact for my own notes, then take the accessibility track.
-- **I am asked to stay on accessibility.** Measure: the accessibility track becomes the plan, and #37416 stays as reading.
+- **A weekend is lost.** Measure: the tutorials keep the priority. The topic guides shrink to Migrations alone.
+- **The tutorials take longer than four weekends.** Measure: they keep the priority, and the topic guides move to 28–29 November.
+- **Review comments on #2924 need more than a weekend.** Measure: I ask in the pull request, and the topic guides wait.
 
 ## How I will know it worked
 
-By 6 December: (i) the polls app runs with its tests, (ii) one contribution is visible on a Django ticket or pull request, (iii) one blog post is published. Results, not intentions.
+By 6 December: (i) the polls app runs with its tests, (ii) one contribution is visible on a Django pull request, (iii) one blog post is published. Results, not intentions.

@@ -2,7 +2,7 @@
 
 **Linda Angulo Lopez, 13 October 2026**
 
-I am a Djangonaut in [Djangonaut Space](https://djangonaut.space/), Session 7, from 12 October to 6 December 2026. It is an eight-week group mentoring programme for people who want to contribute to [Django](https://www.djangoproject.com/). My team's project is **Accessibility / Django**, and I give it about 4 hours a week.
+I am a Djangonaut in [Djangonaut Space](https://djangonaut.space/), Session 7, from 12 October to 6 December 2026. It is an eight-week group mentoring programme for people who want to contribute to [Django](https://www.djangoproject.com/). My team's project is **Accessibility / Django**, and I give it about 4 hours a weekend: since 23 October, weekends are the only time I really have for it.
 
 This site shows what I plan to do, week by week. It is a plan, so it will change.
 
@@ -26,11 +26,11 @@ Django is new to me. I use Python every day, and my Django experience so far is 
 
 | Phase | When | What |
 | --- | --- | --- |
-| **1. Tutorials** | Weeks 1 to 4 | The official Django tutorial, parts 1 to 8, then four ORM topic guides. See [Tutorials](tutorials.md). |
+| **1. Tutorials** | Weekends, 24 Oct to 22 Nov | The official Django tutorial, parts 1 to 8, then four ORM topic guides. See [Tutorials](tutorials.md). |
 | **2. Follow** | From week 1, alongside | I read ORM tickets and pull requests as they move, without commenting. See [ORM watchlist](orm-watchlist.md). |
-| **3. Contribute** | Weeks 5 to 8 | One of the two tracks below. |
+| **3. Contribute** | Weekends, 28 Nov to 6 Dec | Follow-up on my pull request, then a blog post. |
 
-Nothing is contributed before phase 1 is done. The week-by-week table is on [Learning path](learning-path.md).
+The plan was to contribute only after phase 1, but issue #2904 was assigned to me in week 1 and went first. The weekend-by-weekend table is on [Learning path](learning-path.md).
 
 ## Two tracks for the contribution
 
@@ -42,7 +42,7 @@ The choice between the two is open with my Navigator. Both stay on this site unt
 
 ## Status
 
-- 23 October 2026: #2904 fixed on a branch, with a test that failed before the fix and passes after it; pull request next. See [Accessibility track](accessibility-track.md#update-23-october-2026-fixed-on-a-branch-pull-request-next).
+- 23 October 2026: [pull request #2924](https://github.com/django/djangoproject.com/pull/2924) opened for #2904, with a test that failed before the fix and passes after it. See [Accessibility track](accessibility-track.md#update-23-october-2026-fixed-on-a-branch-pull-request-next). Learning path reset to weekends only, tutorials from 24 October. See [Learning path](learning-path.md).
 - 15 October 2026: first accessibility issue assigned to me, [djangoproject.com #2904](https://github.com/django/djangoproject.com/issues/2904), the contact form's e-mail field. See [Accessibility track](accessibility-track.md).
 - 13 October 2026: week 1. Plan published. Tutorial part 1 not started.
 

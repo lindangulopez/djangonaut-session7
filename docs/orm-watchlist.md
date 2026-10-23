@@ -1,6 +1,6 @@
 # ORM watchlist
 
-Phase 2, from week 1. I follow these tickets and pull requests to see how ORM work moves through triage and review. I read, I do not comment yet.
+Phase 2, from week 1, alongside the weekend tutorials. I follow these tickets and pull requests to see how ORM work moves through triage and review. I read, I do not comment yet.
 
 ## Live queries
 

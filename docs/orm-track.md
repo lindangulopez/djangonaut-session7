@@ -11,7 +11,7 @@
 - Two existing tests are the way in, both in `tests/migrations/test_executor.py`: `test_migrations_applied_and_recorded_atomically` and `test_migrations_not_applied_on_deferred_sql_failure`.
 
 !!! note "Read, not reproduced"
-    I read this code path on Django's main branch on 11 October 2026, with the help of Claude. I have not run it. The reproduction is planned for week 5.
+    I read this code path on Django's main branch on 11 October 2026, with the help of Claude. I have not run it. The reproduction was planned for week 5; since 23 October, with weekends only, this track is reading and the reproduction is on hold.
 
 ## What I aim to contribute
 
