@@ -6,8 +6,9 @@
 2. [Models](https://docs.djangoproject.com/en/stable/topics/db/models/) and [Making queries](https://docs.djangoproject.com/en/stable/topics/db/queries/).
 3. [Migrations](https://docs.djangoproject.com/en/stable/topics/migrations/).
 4. [Database transactions](https://docs.djangoproject.com/en/stable/topics/db/transactions/).
-5. [Unit tests](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/): how to run Django's own test suite.
-6. [Triaging tickets](https://docs.djangoproject.com/en/dev/internals/contributing/triaging-tickets/): what the stages and flags on a ticket mean.
+5. [Working with forms](https://docs.djangoproject.com/en/6.1/topics/forms/). Read on 23 October 2026, for issue #2904. A **field** validates the data, a **widget** draws it in HTML. An `EmailField` renders as `<input type="email">` by default, unless you pass it another widget, such as `TextInput`. That was the bug.
+6. [Unit tests](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/): how to run Django's own test suite.
+7. [Triaging tickets](https://docs.djangoproject.com/en/dev/internals/contributing/triaging-tickets/): what the stages and flags on a ticket mean.
 
 ## The ORM, from the inside
 

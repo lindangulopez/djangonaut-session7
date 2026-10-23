@@ -56,5 +56,6 @@ nav:
   - ORM watchlist: orm-watchlist.md
   - ORM track: orm-track.md
   - Accessibility track: accessibility-track.md
+  - "Guide: issue #2904": guide-2904.md
   - Reading list: reading-list.md
   - Setup: setup.md
