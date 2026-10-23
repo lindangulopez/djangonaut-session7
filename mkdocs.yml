@@ -26,6 +26,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.indexes
     - navigation.instant
     - navigation.tracking
     - search.suggest
@@ -48,6 +49,9 @@ markdown_extensions:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        guide-2904.md: reading-list/guide-2904.md
 
 nav:
   - Home: index.md
@@ -56,6 +60,8 @@ nav:
   - ORM watchlist: orm-watchlist.md
   - ORM track: orm-track.md
   - Accessibility track: accessibility-track.md
-  - "Guide: issue #2904": guide-2904.md
-  - Reading list: reading-list.md
+  - Reading list:
+      - reading-list/index.md
+      - Guides:
+          - "Issue #2904, step by step": reading-list/guide-2904.md
   - Setup: setup.md

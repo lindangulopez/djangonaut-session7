@@ -2,14 +2,14 @@
 
 How I fixed [djangoproject.com issue #2904](https://github.com/django/djangoproject.com/issues/2904): on the Django Software Foundation's [contact form](https://www.djangoproject.com/contact/foundation/), the E-mail field rendered as `type="text"`, and neither Name nor E-mail had `autocomplete`. The fix is [pull request #2924](https://github.com/django/djangoproject.com/pull/2924).
 
-The steps and questions were written as a learning guide on 15 October 2026, the day the issue was assigned to me. The answers and notes were added as I worked through it, on 23 October 2026. I wrote the code with Claude's help, as the pull request's AI Assistance Disclosure says. Background and the short version: [Accessibility track](accessibility-track.md).
+The steps and questions were written as a learning guide on 15 October 2026, the day the issue was assigned to me. The answers and notes were added as I worked through it, on 23 October 2026. I wrote the code with Claude's help, as the pull request's AI Assistance Disclosure says. Background and the short version: [Accessibility track](../accessibility-track.md).
 
 ## Step 0: understand the problem before touching code
 
 - [x] Open <https://www.djangoproject.com/contact/foundation/> on your phone. Tap the E-mail field. Which keyboard appears?
 - [x] On your laptop, open the same page with devtools (F12) and inspect the Name and E-mail inputs. Write down the exact attributes each one has.
 - [x] Run **Accessibility Insights for Web** (Ctrl+Shift+K) → FastPass on the page. Does it flag anything about these fields? (It may not: automated tools often miss this one. That is a lesson in itself.) I only saw a lot of colour contrast issues.
-- [x] Optional, 15 min: turn on **Orca**, Tab into the form, and listen to how each field is announced. How: [Tutorial: listen to pull request #2924 with Orca](accessibility-track.md#tutorial-listen-to-pull-request-2924-with-orca-on-ubuntu-with-firefox).
+- [x] Optional, 15 min: turn on **Orca**, Tab into the form, and listen to how each field is announced. How: [Tutorial: listen to pull request #2924 with Orca](../accessibility-track.md#tutorial-listen-to-pull-request-2924-with-orca-on-ubuntu-with-firefox).
 - [x] Read WCAG 2.2 **SC 1.3.5 Identify Input Purpose** (<https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html>) and find the list of input-purpose tokens it points to. Which tokens match "Name" and "E-mail"?
 
 Question to answer in your own words: why does `type` matter for a phone user, and why does `autocomplete` matter for someone for whom typing is slow or painful? These are two different problems.
