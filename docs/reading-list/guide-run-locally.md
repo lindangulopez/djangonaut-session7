@@ -2,6 +2,8 @@
 
 How I run the code of [www.djangoproject.com](https://www.djangoproject.com/) on my laptop, with the docs and dashboard sites, from the [`README.rst`](https://github.com/django/djangoproject.com/blob/main/README.rst) of [django/djangoproject.com](https://github.com/django/djangoproject.com). Written on 24 October 2026, on Ubuntu 24.04 with Docker 29 and Docker Compose 2.40, while working on [issue #2904](guide-2904.md). I wrote it with Claude's help.
 
+As part of my [accessibility track](../accessibility-track.md), I also created [issue #2929](https://github.com/django/djangoproject.com/issues/2929) on the same repository. It proposes adding a `CONTRIBUTING.md` and a `codemeta.json`, and optionally an `AUTHORS` file and a `CITATION.cff`. The repository has no contributor guide yet, so a new contributor starts from the README, as this guide does.
+
 The README gives two ways: (i) a Python 3.12 virtual environment with a local PostgreSQL, or (ii) **docker compose**. I use docker compose: it starts PostgreSQL for you, and the container already has `gettext` and the build tools.
 
 ## Step 0: fork, clone, branch
