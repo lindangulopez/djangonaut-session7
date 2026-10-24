@@ -9,10 +9,9 @@ This page has two parts: my **guides**, just below, then the **reading list** it
     | Guide | What it covers |
     | --- | --- |
     | **[Issue #2904, step by step](guide-2904.md)** | The contact form's E-mail field and `autocomplete`: from reproducing the bug to [pull request #2924](https://github.com/django/djangoproject.com/pull/2924). |
+    | **[Run djangoproject.com locally](guide-run-locally.md)** | The website, docs and dashboard on my laptop with docker compose, and how to fix the 404 on the docs site by building one version only. |
 
     The guides are also in the menu on the left, under **Guides**.
-
-## Django documentation, in reading order
 
 ## Django documentation, in reading order
 
