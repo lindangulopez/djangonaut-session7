@@ -64,4 +64,5 @@ nav:
       - reading-list/index.md
       - Guides:
           - "Issue #2904, step by step": reading-list/guide-2904.md
+          - "Run djangoproject.com locally": reading-list/guide-run-locally.md
   - Setup: setup.md
