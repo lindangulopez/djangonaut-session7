@@ -172,6 +172,18 @@ If docker gives you trouble, write down the exact error and stop there: setup pr
 
 Done: [pull request #2924](https://github.com/django/djangoproject.com/pull/2924), opened on 23 October 2026.
 
+!!! note "First review, 24 October 2026: change the commit message"
+
+    The reviewer asked me to remove the AI agent from the commit's co-authors (the `Co-Authored-By:` line). Django has no rule on it yet, so it is simpler to leave it out; the AI use stays disclosed in the pull request description. To change only the message of the last commit, and push it again:
+
+    ```bash
+    git fetch origin                      # so Git knows what the branch on the fork looks like
+    git commit --amend                    # edit the message, delete the Co-Authored-By line
+    git push --force-with-lease origin contact-email-input-autocomplete
+    ```
+
+    `--force-with-lease` overwrites the branch only if nobody else pushed to it since your last fetch. Without the `git fetch`, it refuses with **"stale info"**: it has nothing to compare against. Check that the code did not change: `git diff <old commit> HEAD` prints nothing.
+
 - Read the commit titles of recent human-written merged pull requests (not the dependabot ones). Imperative or past tense? Do they reference the issue number? Copy the style.
 - Commit, push your branch **to your fork**, and open the pull request against `django/djangoproject.com` `main` (`gh pr create --help`, or the GitHub button).
 - The pull request template has a **required AI Assistance Disclosure**: tick exactly one box. If you used an AI tool, tick the second box and say what it was used for.

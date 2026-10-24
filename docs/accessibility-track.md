@@ -45,6 +45,14 @@ How: I cloned my fork (a shallow clone with `--depth 50`, because the full histo
 
 **Pull request opened, 23 October 2026: [#2924](https://github.com/django/djangoproject.com/pull/2924).** Next: answer the review comments. Every step, with my answers: [Guide: issue #2904, step by step](reading-list/guide-2904.md).
 
+## Update, 24 October 2026: first review
+
+Kanishk Pachauri ([@Mr-Sunglasses](https://github.com/Mr-Sunglasses)) reviewed the pull request and asked for one change: take the AI agent out of the commit's co-authors. Django has no clear rule on this yet and it is a debated topic, so it is simpler to leave it out. The AI use is already disclosed in the pull request description, and I take full ownership of the change.
+
+What I did: removed the `Co-Authored-By:` line from the commit message with `git commit --amend`, and force-pushed the branch. The code is identical, only the message changed. The commit is now `98d39b5`. The pull request waits for a new review.
+
+What I learned: `git push --force-with-lease` refused at first with "stale info". My clone had never fetched the branch from my fork, so Git had nothing to compare against and stopped. A `git fetch origin` first, or naming the commit the push may replace (`--force-with-lease=<branch>:<old commit>`), fixes it. Details in [Step 6 of the guide](reading-list/guide-2904.md#step-6-commit-push-open-the-pull-request-yourself).
+
 ## Tickets I could take over
 
 | Ticket | What | Pull request | State on 13 Oct |
