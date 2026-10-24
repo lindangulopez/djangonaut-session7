@@ -58,11 +58,19 @@ docker compose run --rm web python -m manage createsuperuser
 | dashboard | <http://dashboard.djangoproject.localhost:8000/> |
 | admin | <http://www.djangoproject.localhost:8000/admin/> |
 | docs | <http://docs.djangoproject.localhost:8000/>, only after step 5 |
+| contact form, the page of [issue #2904](guide-2904.md) | <http://www.djangoproject.localhost:8000/contact/foundation/> |
 
-All three sites run in the same process, on port 8000. If a hostname does not resolve, add this line to `/etc/hosts`:
+All three sites run in the same process, on port 8000. `http://localhost:8000/` on its own shows nothing useful: the site picks the site from the hostname, so use the names above. If a hostname does not resolve, add this line to `/etc/hosts`:
 
 ```text
 127.0.0.1 www.djangoproject.localhost docs.djangoproject.localhost dashboard.djangoproject.localhost
+```
+
+To check whether the site is already up, from the repository:
+
+```bash
+docker compose ps          # web should be Up, with 0.0.0.0:8000->8000/tcp
+ss -ltnp | grep :8000      # something is listening on the host port
 ```
 
 ## Step 5: build the docs, one version only
