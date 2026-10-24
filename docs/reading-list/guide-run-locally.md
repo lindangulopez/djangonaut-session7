@@ -58,11 +58,45 @@ docker compose run --rm web python -m manage createsuperuser
 | dashboard | <http://dashboard.djangoproject.localhost:8000/> |
 | admin | <http://www.djangoproject.localhost:8000/admin/> |
 | docs | <http://docs.djangoproject.localhost:8000/>, only after step 5 |
+| contact form, the page of [issue #2904](guide-2904.md) | <http://www.djangoproject.localhost:8000/contact/foundation/> |
 
-All three sites run in the same process, on port 8000. If a hostname does not resolve, add this line to `/etc/hosts`:
+To check whether the site is already up, from the repository:
+
+```bash
+docker compose ps          # web should be Up, with 0.0.0.0:8000->8000/tcp
+ss -ltnp | grep :8000      # something is listening on the host port
+```
+
+### Subdomain routing, or why `localhost:8000` does not work
+
+All three sites are one Django process on one port. `http://localhost:8000/` gives a 400 page, `DisallowedHost at /`, not the home page. That is not a broken install: this project routes on the **hostname**, not on the path.
+
+Two settings do it:
+
+- `ALLOWED_HOSTS` in `djangoproject/settings/dev.py` lists the four names Django will answer to: `djangoproject.localhost` and its `www`, `docs` and `dashboard` subdomains. `localhost` is not one of them, so Django refuses the request before any view runs. (Django's usual "`localhost` works in `DEBUG`" shortcut only applies when `ALLOWED_HOSTS` is empty, and here it is not.)
+- [`django-hosts`](https://django-hosts.readthedocs.io/) then chooses the URLconf from the subdomain, in `djangoproject/hosts.py`:
+
+```python
+host_patterns = [
+    host(r"www", settings.ROOT_URLCONF, name="www"),          # djangoproject.urls.www
+    host(r"docs", "djangoproject.urls.docs", name="docs"),
+    host(r"dashboard", "dashboard.urls", name="dashboard"),
+]
+```
+
+`PARENT_HOST` (`djangoproject.localhost:8000` in dev, `djangoproject.com` in production) is the part stripped off before matching, and `DEFAULT_HOST = "www"` is the fallback, which is why the bare `http://djangoproject.localhost:8000/` also gives the www site. So the same code serves three sites, and a `{% host_url %}` link can point from one to another in both dev and production without hardcoding a domain.
+
+The names resolve without any configuration on most systems: `.localhost` is reserved for the local machine ([RFC 6761](https://www.rfc-editor.org/rfc/rfc6761#section-6.3)), and resolvers and browsers send any `*.localhost` name to 127.0.0.1. If yours does not, add the line to `/etc/hosts`:
 
 ```text
 127.0.0.1 www.djangoproject.localhost docs.djangoproject.localhost dashboard.djangoproject.localhost
+```
+
+To see the routing from the command line, send the hostname by hand, the port included, because `PARENT_HOST` carries it:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" -H "Host: www.djangoproject.localhost:8000" http://127.0.0.1:8000/   # 200
+curl -s -o /dev/null -w "%{http_code}\n" -H "Host: localhost:8000"                   http://127.0.0.1:8000/   # 400
 ```
 
 ## Step 5: build the docs, one version only
