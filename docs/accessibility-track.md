@@ -53,11 +53,23 @@ What I did: removed the `Co-Authored-By:` line from the commit message with `git
 
 What I learned: `git push --force-with-lease` refused at first with "stale info". My clone had never fetched the branch from my fork, so Git had nothing to compare against and stopped. A `git fetch origin` first, or naming the commit the push may replace (`--force-with-lease=<branch>:<old commit>`), fixes it. Details in [Step 6 of the guide](reading-list/guide-2904.md#step-6-commit-push-open-the-pull-request-yourself).
 
+## Update, 25 October 2026: ticket #36510 handed over, I will review it
+
+On 11 October I asked the author of [pull request #20513](https://github.com/django/django/pull/20513) whether I could take over [ticket #36510](https://code.djangoproject.com/ticket/36510), the model name in the admin pagination heading. I got no answer, and I never claimed the ticket on Trac. On 25 October another Djangonaut from this session took ownership of it on Trac, after talking with their Navigator, and asked on the pull request whether either of us was still working on it.
+
+I answered the same day: I am not working on it, so they can go ahead with a new pull request. I offered to review it, and to test the heading with a screen reader, once it is up.
+
+The ticket needs a decision before it needs code. The heading is visually hidden and read only by screen readers. One view says "Pagination" is enough. The other says the model name helps someone who moves between many change list pages. A third option keeps "Pagination" as the heading and gives the model name through `aria-describedby`. The accessibility team has not decided yet.
+
+What I learned: the owner field on Trac is what claims a ticket, not a comment on GitHub. A review is a contribution too, and it fits the time I have.
+
+Next: review the new pull request when it is opened, and listen to the heading with Orca, before and after.
+
 ## Tickets I could take over
 
 | Ticket | What | Pull request | State on 13 Oct |
 | --- | --- | --- | --- |
-| [#36510](https://code.djangoproject.com/ticket/36510) | Redundant model name in the admin pagination heading | [#20513](https://github.com/django/django/pull/20513) | Open, 7 lines |
+| [#36510](https://code.djangoproject.com/ticket/36510) | Redundant model name in the admin pagination heading | [#20513](https://github.com/django/django/pull/20513) | Open, 7 lines. Taken by another Djangonaut on 25 Oct; I will review (see the update above) |
 | [#36509](https://code.djangoproject.com/ticket/36509) | Missing label on input fields in admin tables | [#19655](https://github.com/django/django/pull/19655) | Open, last updated July 2026 |
 
 Taking over means asking the author first.
