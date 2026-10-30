@@ -65,6 +65,35 @@ What I learned: the owner field on Trac is what claims a ticket, not a comment o
 
 Next: review the new pull request when it is opened, and listen to the heading with Orca, before and after.
 
+## Update, 30 October 2026: a maintainer asks about the test
+
+Kanishk approved pull request #2924 on 26 October ("LGTM"). GitHub shows it as "Approved these changes with read-only permissions": he does not have write access to djangoproject.com, so his approval is a review, but it does not count toward the merge. That needs a maintainer.
+
+On 29 October a maintainer, Adam ([@adamzap](https://github.com/adamzap)), asked:
+
+> I wonder if the test is needed since it's kind of just testing built-in Django features. The form changes are declarative.
+
+He has a point. The change only swaps one widget and adds two attributes, and my test compares the whole rendered `<input>` tag. So it also re-checks things Django already tests, such as `maxlength="320"`, and a Django upgrade that changes a default could break it even though the form is fine.
+
+Why I wrote it anyway: the `TextInput` override sat unnoticed from 2016 to 2025 because nothing checked the input type, and the `autocomplete` attributes are what meet WCAG 2.2 SC 1.3.5. A later widget change could drop them without any test failing.
+
+I asked before changing anything:
+
+> Would you prefer I: (i) remove it, or (ii) narrow it to check only the input type and the two autocomplete values?
+
+Option (ii) would check the widget, not the HTML:
+
+```python
+email = form.fields["email"].widget
+self.assertEqual(email.input_type, "email")
+self.assertEqual(email.attrs["autocomplete"], "email")
+self.assertEqual(form.fields["name"].widget.attrs["autocomplete"], "name")
+```
+
+What I learned: who reviews matters as much as what they say. A contributor's approval tells the maintainer someone has checked the change; the maintainer decides. And a test for declarative code has to earn its place: it should fail only if the fix is undone, not if Django changes.
+
+Next: one small commit once Adam answers. The pull request is still open.
+
 ## Tickets I could take over
 
 | Ticket | What | Pull request | State on 13 Oct |
