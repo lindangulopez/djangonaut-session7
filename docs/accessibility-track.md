@@ -94,6 +94,22 @@ What I learned: who reviews matters as much as what they say. A contributor's ap
 
 Next: one small commit once Adam answers. The pull request is still open.
 
+## Update, 4 November 2026: test removed
+
+Adam had not answered after five days, so I chose option (i) and removed the test. His comment already pointed that way, and Kanishk's approval had covered the form change, not the test.
+
+The pull request now changes only the two widgets in `contact/forms.py`. I amended the commit, kept the same message with no co-author line, and force-pushed (`98d39b5` to `b134f32`). Then I told Adam on the pull request.
+
+The force-push was rejected twice as "stale info". This clone only tracks `main`, so Git had no record of the branch on GitHub and could not run the `--force-with-lease` check. Fetching the branch did not help, because a single-branch fetch only fills `FETCH_HEAD`. Naming the commit I expected on GitHub worked:
+
+```bash
+git push --force-with-lease=contact-email-input-autocomplete:98d39b5... origin contact-email-input-autocomplete
+```
+
+What I learned: when a maintainer says a test may not be needed, the question is often the answer. And `--force-with-lease` is only as safe as what Git knows about the remote. If it knows nothing, give it the commit yourself.
+
+Next: wait for the checks to run again and for a maintainer to merge. The pull request is still open.
+
 ## Tickets I could take over
 
 | Ticket | What | Pull request | State on 13 Oct |
