@@ -23,7 +23,7 @@ Part 2 and part 5 matter most for what follows: part 2 is where migrations first
 
 Weekend of 21–22 November, once the polls app works. Database transactions if there is time.
 
-- [x] [Models](https://docs.djangoproject.com/en/stable/topics/db/models/): fields, relationships, `Meta`. Demo: the [models-demo branch](https://github.com/lindangulopez/djangotutorial/tree/models-demo).
+- [x] [Models](https://docs.djangoproject.com/en/stable/topics/db/models/): fields, relationships, `Meta`. Demo: [Models demo](https://github.com/lindangulopez/djangotutorial#models-demo).
 - [ ] [Making queries](https://docs.djangoproject.com/en/stable/topics/db/queries/): `QuerySet`, lookups, related objects.
 - [ ] [Migrations](https://docs.djangoproject.com/en/stable/topics/migrations/): `makemigrations`, `migrate`, `sqlmigrate`, `showmigrations`, the `django_migrations` table.
 - [ ] [Database transactions](https://docs.djangoproject.com/en/stable/topics/db/transactions/): `BEGIN`, `COMMIT`, `transaction.atomic`.
