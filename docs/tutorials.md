@@ -6,14 +6,14 @@ Phase 1, on weekends from 24 October to 22 November (reset on 23 October: I can 
 
 The polls app, in eight parts. Links go to the stable documentation.
 
-- [ ] [Part 1](https://docs.djangoproject.com/en/stable/intro/tutorial01/) (weekend of 24–25 Oct): a project, an app, a first view. Requests and responses.
-- [ ] [Part 2](https://docs.djangoproject.com/en/stable/intro/tutorial02/) (weekend of 24–25 Oct): the database, models, a first migration, the admin site.
-- [ ] [Part 3](https://docs.djangoproject.com/en/stable/intro/tutorial03/) (weekend of 31 Oct–1 Nov): views and templates.
-- [ ] [Part 4](https://docs.djangoproject.com/en/stable/intro/tutorial04/) (weekend of 7–8 Nov): forms and generic views.
-- [ ] [Part 5](https://docs.djangoproject.com/en/stable/intro/tutorial05/) (weekend of 7–8 Nov): automated tests.
-- [ ] [Part 6](https://docs.djangoproject.com/en/stable/intro/tutorial06/) (weekend of 14–15 Nov): static files.
-- [ ] [Part 7](https://docs.djangoproject.com/en/stable/intro/tutorial07/) (weekend of 14–15 Nov): customising the admin site.
-- [ ] [Part 8](https://docs.djangoproject.com/en/stable/intro/tutorial08/) (weekend of 14–15 Nov): third-party packages.
+- [x] [Part 1](https://docs.djangoproject.com/en/stable/intro/tutorial01/) (weekend of 24–25 Oct): a project, an app, a first view. Requests and responses.
+- [x] [Part 2](https://docs.djangoproject.com/en/stable/intro/tutorial02/) (weekend of 24–25 Oct): the database, models, a first migration, the admin site.
+- [x] [Part 3](https://docs.djangoproject.com/en/stable/intro/tutorial03/) (weekend of 31 Oct–1 Nov): views and templates.
+- [x] [Part 4](https://docs.djangoproject.com/en/stable/intro/tutorial04/) (weekend of 7–8 Nov): forms and generic views.
+- [x] [Part 5](https://docs.djangoproject.com/en/stable/intro/tutorial05/) (weekend of 7–8 Nov): automated tests.
+- [x] [Part 6](https://docs.djangoproject.com/en/stable/intro/tutorial06/) (weekend of 14–15 Nov): static files.
+- [x] [Part 7](https://docs.djangoproject.com/en/stable/intro/tutorial07/) (weekend of 14–15 Nov): customising the admin site.
+- [x] [Part 8](https://docs.djangoproject.com/en/stable/intro/tutorial08/) (weekend of 14–15 Nov): third-party packages.
 
 Part 2 and part 5 matter most for what follows: part 2 is where migrations first appear, and part 5 is how Django expects a change to be proven.
 
