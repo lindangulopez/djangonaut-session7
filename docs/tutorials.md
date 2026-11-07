@@ -15,13 +15,15 @@ The polls app, in eight parts. Links go to the stable documentation.
 - [x] [Part 7](https://docs.djangoproject.com/en/stable/intro/tutorial07/) (weekend of 14–15 Nov): customising the admin site.
 - [x] [Part 8](https://docs.djangoproject.com/en/stable/intro/tutorial08/) (weekend of 14–15 Nov): third-party packages.
 
+Code: [lindangulopez/djangotutorial](https://github.com/lindangulopez/djangotutorial).
+
 Part 2 and part 5 matter most for what follows: part 2 is where migrations first appear, and part 5 is how Django expects a change to be proven.
 
 ## ORM topic guides
 
 Weekend of 21–22 November, once the polls app works. Database transactions if there is time.
 
-- [ ] [Models](https://docs.djangoproject.com/en/stable/topics/db/models/): fields, relationships, `Meta`.
+- [x] [Models](https://docs.djangoproject.com/en/stable/topics/db/models/): fields, relationships, `Meta`. Demo: the [models-demo branch](https://github.com/lindangulopez/djangotutorial/tree/models-demo).
 - [ ] [Making queries](https://docs.djangoproject.com/en/stable/topics/db/queries/): `QuerySet`, lookups, related objects.
 - [ ] [Migrations](https://docs.djangoproject.com/en/stable/topics/migrations/): `makemigrations`, `migrate`, `sqlmigrate`, `showmigrations`, the `django_migrations` table.
 - [ ] [Database transactions](https://docs.djangoproject.com/en/stable/topics/db/transactions/): `BEGIN`, `COMMIT`, `transaction.atomic`.
