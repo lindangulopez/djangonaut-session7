@@ -12,6 +12,10 @@
 | **28–29 Nov** | 7, Collecting samples! | Contribute: answer review comments on [pull request #2924](https://github.com/django/djangoproject.com/pull/2924). Read ticket #37416 again, with what the guides taught. | Pull request updated, or merged |
 | **5–6 Dec** | 8, Returning home | Wrap up. Blog post. | Blog post published |
 
+## Alongside, from 14 November: pull request #21173
+
+The tutorials were done on 7 November. Six sessions of about an hour go to understanding [pull request #21173](https://github.com/django/django/pull/21173), the new `ForeignObject` docs, and the tests run on it: [Guide: PR #21173](reading-list/guide-21173.md). It is ORM material, and it ends on a decision: a comment on the pull request, a new ticket, or a question for my Navigator.
+
 ## The contribution came first
 
 The plan was to contribute only after the tutorials. Issue [#2904](https://github.com/django/djangoproject.com/issues/2904) was assigned to me in week 1, so it went first: [pull request #2924](https://github.com/django/djangoproject.com/pull/2924) was opened on 23 October. See [Accessibility track](accessibility-track.md). Review comments can arrive on any day; I answer them at the weekend.

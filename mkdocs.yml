@@ -65,4 +65,5 @@ nav:
       - Guides:
           - "Issue #2904, step by step": reading-list/guide-2904.md
           - "Run djangoproject.com locally": reading-list/guide-run-locally.md
+          - "PR #21173, ForeignObject and on_delete": reading-list/guide-21173.md
   - Setup: setup.md

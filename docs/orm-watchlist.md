@@ -23,7 +23,7 @@ Kept by hand. Django's tracker cannot be read automatically, so the stage is the
 | [#37371](https://code.djangoproject.com/ticket/37371) | Inconsistent behaviour of `--keepdb` with the SQLite backend | Testing framework | Unreviewed, assigned | Test databases, which I need for the reproduction | 11 Oct |
 | [#37415](https://code.djangoproject.com/ticket/37415) | Error in the documentation of `connection.execute_wrapper` | Documentation | Unreviewed | A small documentation ticket on the database layer | 11 Oct |
 | [#37365](https://code.djangoproject.com/ticket/37365) | `models.E007` and a quoted `db_column` |  |  | System checks on models, see pull request #22015 |  |
-| [#34122](https://code.djangoproject.com/ticket/34122) | Reference documentation for `ForeignObject` |  |  | Relations without a foreign key constraint, see pull request #21173 |  |
+| [#34122](https://code.djangoproject.com/ticket/34122) | Reference documentation for `ForeignObject` |  |  | Relations without a foreign key constraint, see pull request #21173 and my [guide](reading-list/guide-21173.md) |  |
 | [#29721](https://code.djangoproject.com/ticket/29721) | Migrations are not applied atomically |  | Closed, fixed | History of #37416 | 11 Oct |
 | [#32374](https://code.djangoproject.com/ticket/32374) | Migrations marked applied when deferred SQL fails |  | Closed, fixed | History of #37416 | 11 Oct |
 
@@ -33,7 +33,7 @@ States read on GitHub on 13 October 2026.
 
 | Pull request | What | State | Last updated |
 | --- | --- | --- | --- |
-| [#21173](https://github.com/django/django/pull/21173) | Reference docs for `ForeignObject` (ticket #34122) | Open | 11 Oct 2026 |
+| [#21173](https://github.com/django/django/pull/21173) | Reference docs for `ForeignObject` (ticket #34122). Tested on 12 Nov: `SET_NULL` and the `DB_*` options do not behave as documented, see my [guide](reading-list/guide-21173.md) | Open, a user asked for it to be merged | 12 Nov 2026 |
 | [#22015](https://github.com/django/django/pull/22015) | `models.E007` duplicate column detection with a quoted `db_column` (ticket #37365) | Open | 23 Sept 2026 |
 | [#20367](https://github.com/django/django/pull/20367) | Windowing example in the expressions docs | Open | 7 April 2026 |
 
