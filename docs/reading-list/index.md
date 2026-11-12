@@ -10,6 +10,7 @@ This page has two parts: my **guides**, just below, then the **reading list** it
     | --- | --- |
     | **[Issue #2904, step by step](guide-2904.md)** | The contact form's E-mail field and `autocomplete`: from reproducing the bug to [pull request #2924](https://github.com/django/djangoproject.com/pull/2924). |
     | **[Run djangoproject.com locally](guide-run-locally.md)** | The website, docs and dashboard on my laptop with docker compose, and how to fix the 404 on the docs site by building one version only. |
+    | **[PR #21173, `ForeignObject` and `on_delete`](guide-21173.md)** | What the new `ForeignObject` docs say, what Django does when tested, and six sessions to understand the difference before I say anything on the pull request. |
 
     The guides are also in the menu on the left, under **Guides**.
 
