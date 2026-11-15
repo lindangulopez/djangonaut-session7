@@ -12,6 +12,10 @@
 | **28–29 Nov** | 7, Collecting samples! | Contribute: answer review comments on [pull request #2924](https://github.com/django/djangoproject.com/pull/2924). Read ticket #37416 again, with what the guides taught. | Pull request updated, or merged |
 | **5–6 Dec** | 8, Returning home | Wrap up. Blog post. | Blog post published |
 
+## After the session, from mid-December: GeoDjango
+
+Session 7 ends on 6 December. From Saturday 19 December to Saturday 23 January 2027, six weekend sessions of about 1.5 to 2 hours join Django to GIS: a GeoDjango project on PostgreSQL with PostGIS, the same table edited in QGIS, a GeoJSON view, a test, and a public repository with a SWHID. See [GeoDjango track](geodjango-track.md).
+
 ## Alongside, from 14 November: pull request #21173
 
 The tutorials were done on 7 November. Six sessions of about an hour go to understanding [pull request #21173](https://github.com/django/django/pull/21173), the new `ForeignObject` docs, and the tests run on it: [Guide: PR #21173](reading-list/guide-21173.md). It is ORM material, and it ends on a decision: a comment on the pull request, a new ticket, or a question for my Navigator.

@@ -29,6 +29,7 @@ Django is new to me. I use Python every day, and my Django experience so far is 
 | **1. Tutorials** | Weekends, 24 Oct to 22 Nov | The official Django tutorial, parts 1 to 8, then four ORM topic guides. See [Tutorials](tutorials.md). |
 | **2. Follow** | From week 1, alongside | I read ORM tickets and pull requests as they move, without commenting. See [ORM watchlist](orm-watchlist.md). |
 | **3. Contribute** | Weekends, 28 Nov to 6 Dec | Follow-up on my pull request, then a blog post. |
+| **4. After the session: GeoDjango** | Weekends, 19 Dec 2026 to 23 Jan 2027 | Django with PostgreSQL, PostGIS and QGIS, on a small register of trees in the Forest of Fontainebleau. See [GeoDjango track](geodjango-track.md). |
 
 The plan was to contribute only after phase 1, but issue #2904 was assigned to me in week 1 and went first. The weekend-by-weekend table is on [Learning path](learning-path.md).
 
