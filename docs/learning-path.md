@@ -8,9 +8,9 @@
 | **31 Oct–1 Nov** | 3, Into orbit! | Light weekend. Part 3: views and templates. | Polls pages showing in the browser |
 | **7–8 Nov** | 4, Avoiding asteroids! | Parts 4 and 5: forms and tests. | Polls app with passing tests |
 | **14–15 Nov** | 5, Traveling amongst the stars! | Parts 6 to 8: static files, admin, third-party packages. | Polls project complete, all eight parts |
-| **21–22 Nov** | 6, Talking to extraterrestrials | Topic guides: Models, Making queries, Migrations. Database transactions if there is time. | Note: what `migrate` does, in my own words |
-| **28–29 Nov** | 7, Collecting samples! | Contribute: answer review comments on [pull request #2924](https://github.com/django/djangoproject.com/pull/2924). Read ticket #37416 again, with what the guides taught. | Pull request updated, or merged |
-| **5–6 Dec** | 8, Returning home | Wrap up. Blog post. | Blog post published |
+| **21–22 Nov** | 6, Talking to extraterrestrials | Issue [#2929](https://github.com/django/djangoproject.com/issues/2929): the `pyproject.toml` pull request, and the `CONTRIBUTING.md` outline on the issue (about 2 hours). Then the Migrations topic guide only. | Pull request opened, outline posted |
+| **28–29 Nov** | 7, Collecting samples! | [Pull request #2924](https://github.com/django/djangoproject.com/pull/2924): one short comment if nothing has moved. #2929: answer review on the `pyproject.toml` pull request; write `CONTRIBUTING.md` if the outline is agreed. | #2924 merged or asked about; `CONTRIBUTING.md` pull request, if agreed |
+| **5–6 Dec** | 8, Returning home | Wrap up. `codemeta.json` pull request if `pyproject.toml` is merged. Blog post. | Blog post published |
 
 ## After the session, from mid-December: GeoDjango
 
@@ -23,6 +23,8 @@ The tutorials were done on 7 November. Six sessions of about an hour go to under
 ## The contribution came first
 
 The plan was to contribute only after the tutorials. Issue [#2904](https://github.com/django/djangoproject.com/issues/2904) was assigned to me in week 1, so it went first: [pull request #2924](https://github.com/django/djangoproject.com/pull/2924) was opened on 23 October. See [Accessibility track](accessibility-track.md). Review comments can arrive on any day; I answer them at the weekend.
+
+On 19 November a second issue joined it: [#2929](https://github.com/django/djangoproject.com/issues/2929), the repository's `CONTRIBUTING.md` and `codemeta.json`, as three small pull requests. The plan for both is in [Accessibility track](accessibility-track.md#plan-19-november-2026-follow-2904-do-2929). The topic guides shrink to Migrations to make room.
 
 With weekends only, the [ORM track](orm-track.md) becomes reading: ticket #37416 stays on the [ORM watchlist](orm-watchlist.md), without a reproduction of my own.
 

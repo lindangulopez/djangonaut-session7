@@ -28,7 +28,7 @@ Django is new to me. I use Python every day, and my Django experience so far is 
 | --- | --- | --- |
 | **1. Tutorials** | Weekends, 24 Oct to 22 Nov | The official Django tutorial, parts 1 to 8, then four ORM topic guides. See [Tutorials](tutorials.md). |
 | **2. Follow** | From week 1, alongside | I read ORM tickets and pull requests as they move, without commenting. See [ORM watchlist](orm-watchlist.md). |
-| **3. Contribute** | Weekends, 28 Nov to 6 Dec | Follow-up on my pull request, then a blog post. |
+| **3. Contribute** | Weekends, 21 Nov to 6 Dec | Follow-up on my pull request #2924, three small pull requests for issue #2929, then a blog post. |
 | **4. After the session: GeoDjango** | Weekends, 19 Dec 2026 to 23 Jan 2027 | Django with PostgreSQL, PostGIS and QGIS, on a small register of trees in the Forest of Fontainebleau. See [GeoDjango track](geodjango-track.md). |
 
 The plan was to contribute only after phase 1, but issue #2904 was assigned to me in week 1 and went first. The weekend-by-weekend table is on [Learning path](learning-path.md).
@@ -43,6 +43,7 @@ The choice between the two is open with my Navigator. Both stay on this site unt
 
 ## Status
 
+- 19 November 2026: Kanishk answered [issue #2929](https://github.com/django/djangoproject.com/issues/2929): three small pull requests instead of one, starting with the licence and project URLs in `pyproject.toml`, then an outline of `CONTRIBUTING.md`, then `codemeta.json`. I start on 21–22 November. [Pull request #2924](https://github.com/django/djangoproject.com/pull/2924) for #2904 still waits for a maintainer; one short comment on 28–29 November if nothing has moved. See [Accessibility track](accessibility-track.md#plan-19-november-2026-follow-2904-do-2929).
 - 12 November 2026: new guide, [PR #21173, `ForeignObject` and `on_delete`](reading-list/guide-21173.md). Tests on Django's main branch, run with Claude's help, show that `SET_NULL`, `SET_DEFAULT` and `SET()` raise a `FieldError` with a `ForeignObject`, and that the `DB_*` options do nothing, where the new docs say it "behaves the same as `ForeignKey.on_delete`". The guide is my learning path to understand why, before I say anything on the pull request.
 - 4 November 2026: I removed the test from [pull request #2924](https://github.com/django/djangoproject.com/pull/2924), as the maintainer's question suggested. The pull request now changes only the two widgets in `contact/forms.py`. It's amended and force-pushed with no co-author line, and it waits for a maintainer to merge. See [Accessibility track](accessibility-track.md#update-4-november-2026-test-removed).
 - 30 October 2026: a maintainer asked whether the test in [pull request #2924](https://github.com/django/djangoproject.com/pull/2924) is needed, since the form change is declarative. I asked him to choose: remove it, or narrow it to the input type and the two `autocomplete` values. Kanishk's approval of 26 October is read-only, so the merge waits for a maintainer. See [Accessibility track](accessibility-track.md#update-30-october-2026-a-maintainer-asks-about-the-test).
