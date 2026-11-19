@@ -110,6 +110,124 @@ What I learned: when a maintainer says a test may not be needed, the question is
 
 Next: wait for the checks to run again and for a maintainer to merge. The pull request is still open.
 
+## Plan, 19 November 2026: follow #2904, do #2929
+
+Two issues on djangoproject.com, at two different stages. Issue #2904 is done on my side and waits for a maintainer. Issue #2929 starts now, with three small pull requests in an order Kanishk proposed.
+
+### Issue #2904: follow it to the merge
+
+**Where it is on 19 November.** [Pull request #2924](https://github.com/django/djangoproject.com/pull/2924) is open. It changes only the two widgets in `contact/forms.py`. Kanishk approved it on 26 October, with read-only permissions. My last comment, after removing the test, has had no answer from a maintainer. The issue is still assigned to me, and my last comment there says it waits for a maintainer to merge.
+
+**What I do, and what I don't.**
+
+- [ ] Each weekend: open the pull request and look at two things only: are the checks green, and is there a new comment?
+- [ ] No new commits unless a maintainer asks. No rebase either, unless GitHub shows a conflict.
+- [ ] **28–29 November**, if nothing has moved: one short comment on the pull request, then nothing more until the end of the session. Draft:
+
+    > Hi @adamzap, the PR now only changes the two widgets in `contact/forms.py`, and the checks pass. Is there anything else you'd like me to change before it can be merged?
+
+- [ ] If there is still no answer by 5–6 December: tell my Navigator in the session wrap-up. A pull request waiting for a maintainer is a normal end to a session, not a failure.
+
+**When it is merged.**
+
+- [ ] Nothing to close by hand: the commit message starts with `Fixed #2904`, so GitHub closes the issue on merge. Check that it did.
+- [ ] Once the site is deployed, check the live [contact form](https://www.djangoproject.com/contact/foundation/) three ways: the phone shows the e-mail keyboard, the developer tools (**F12**) show `type="email"` and both `autocomplete` values, and Orca. Fill in the "After" column of [What I heard](#what-i-heard) from the live site, not my branch.
+- [ ] Delete the branch `contact-email-input-autocomplete` on my fork.
+
+### Issue #2929: three small pull requests
+
+On 19 November Kanishk answered [issue #2929](https://github.com/django/djangoproject.com/issues/2929): several small pull requests, not one big one. I said I would start this weekend. His order:
+
+| Step | What | When | Gate |
+| --- | --- | --- | --- |
+| 1 | `pyproject.toml`: add `license` and `[project.urls]` | 21–22 Nov | None: "nothing to discuss there" |
+| 2 | An outline of `CONTRIBUTING.md`, as a comment on the issue | 21–22 Nov | None |
+| 3 | `CONTRIBUTING.md`, a separate file | After we agree on the outline | The outline |
+| 4 | `codemeta.json`, generated from `pyproject.toml` | After step 1 is merged | Step 1 merged |
+| – | `AUTHORS` and `CITATION.cff` | Parked | Later, if at all |
+
+#### Step 1: the `pyproject.toml` pull request
+
+The whole change, ten lines:
+
+```diff
+ name = "djangoproject-com"
+ version = "0.1.0"
+ description = "Source code to djangoproject.com"
++license = "BSD-3-Clause"
+ requires-python = "==3.12.*"
+@@
+     "time-machine==3.3.0",
+ ]
+
++[project.urls]
++Homepage = "https://www.djangoproject.com/"
++Repository = "https://github.com/django/djangoproject.com"
++Issues = "https://github.com/django/djangoproject.com/issues"
++
+ [dependency-groups]
+```
+
+`BSD-3-Clause` matches the `LICENSE` file. The `license` field takes the SPDX name as a plain string, as in [PEP 639](https://peps.python.org/pep-0639/). The site is not built as a package (`package = false` under `[tool.uv]`), so nothing else changes: on 19 November I tried the diff on a throwaway copy of `main`, and `uv lock --check` passed with the lock file unchanged.
+
+```bash
+cd ~/Github/djangoproject.com
+git fetch upstream
+git switch -c pyproject-license-urls upstream/main
+# edit pyproject.toml as above
+uv lock --check
+git commit -am "Refs #2929 -- Added license and project URLs to pyproject.toml."
+git push origin pyproject-license-urls
+```
+
+`Refs`, not `Fixed`: the issue covers more than this pull request, so it must stay open. In the pull request template, tick the AI Assistance Disclosure box, and no co-author line in the commit (see the [24 October update](#update-24-october-2026-first-review)).
+
+#### Step 2: the `CONTRIBUTING.md` outline
+
+Kanishk wants a separate file, because the README is already long, and an outline first. A comment on the issue, not a pull request. Draft:
+
+> Here's a rough outline. Each section stays short and links to the README rather than repeating it.
+>
+> 1. **What this repository is**: the code of djangoproject.com and its docs and dashboard sites, not Django itself.
+> 2. **Where to report what**: website bugs here, in GitHub issues; bugs in Django on [Trac](https://code.djangoproject.com/); security issues as in `.github/SECURITY.md`.
+> 3. **Picking an issue**: ask on the issue before starting, and wait to be assigned.
+> 4. **Setting up**: links to the README sections "Install and run locally from a virtual environment" and "Running Locally with Docker".
+> 5. **Making a change**: branch from `main`, run the tests ("Running the tests"), and the git hooks ("git hooks").
+> 6. **Pull requests**: fill in the template, including the AI Assistance Disclosure. Anyone can review; a maintainer merges.
+> 7. **Code of conduct**: a link to Django's.
+>
+> Two questions: should it ask for Django's commit message style (`Fixed #NNNN -- ...`)? And is there anything you'd add or drop?
+
+The two questions are real: I don't know whether this repository wants Django's commit style, and I should not write a rule the team has not agreed.
+
+#### Step 4: `codemeta.json`, once step 1 is merged
+
+Every field below comes from `pyproject.toml`, `LICENSE` or the repository URL, so it stays short and easy to keep in sync. CodeMeta 4.0 adds Schema.org's `archivedAt`, which names Software Heritage, where the repository is already archived.
+
+```json
+{
+  "@context": "https://w3id.org/codemeta/4.0",
+  "@type": "SoftwareSourceCode",
+  "name": "djangoproject-com",
+  "description": "Source code to djangoproject.com",
+  "url": "https://www.djangoproject.com/",
+  "codeRepository": "https://github.com/django/djangoproject.com",
+  "issueTracker": "https://github.com/django/djangoproject.com/issues",
+  "license": "https://spdx.org/licenses/BSD-3-Clause",
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "Django Software Foundation"
+  },
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.12",
+  "archivedAt": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/django/djangoproject.com"
+}
+```
+
+Before the pull request: check it against the CodeMeta 4.0 context, and re-read the merged `pyproject.toml` in case the step 1 review changed something. Commit message: `Refs #2929 -- Added codemeta.json.` If `CONTRIBUTING.md` is merged by then, the last of the agreed pull requests can say `Fixed #2929` instead.
+
+What I am learning here: a good proposal shrinks in review. I asked for one pull request and four files; I am getting three pull requests, two files and a config change. Each one is easy to review and easy to say yes to.
+
 ## Tickets I could take over
 
 | Ticket | What | Pull request | State on 13 Oct |
