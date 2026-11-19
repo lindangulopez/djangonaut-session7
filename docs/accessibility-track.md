@@ -110,6 +110,26 @@ What I learned: when a maintainer says a test may not be needed, the question is
 
 Next: wait for the checks to run again and for a maintainer to merge. The pull request is still open.
 
+## Update, 19 November 2026: merged
+
+Sarah Abderemane ([@sabderemane](https://github.com/sabderemane)) approved [pull request #2924](https://github.com/django/djangoproject.com/pull/2924) ("Thank you! 🎸") and merged it on 19 November 2026, at 13:34 Paris time. It is now commit [95960825](https://github.com/django/djangoproject.com/commit/95960825c3838b55938ecd6122cf018200a71595) on `main`: one file, `contact/forms.py`, two lines changed. GitHub closed [issue #2904](https://github.com/django/djangoproject.com/issues/2904) the same minute, because the commit message starts with `Fixed #2904`.
+
+```python
+email = forms.EmailField(
+    widget=forms.EmailInput(attrs={"class": "required", "autocomplete": "email"}),
+...
+name = forms.CharField(
+    widget=forms.TextInput(attrs={"class": "required", "autocomplete": "name"}),
+```
+
+I am the only author of the commit, with no co-author line; the AI use is disclosed in the pull request description. From the issue being assigned to me (15 October) to the merge: five weeks. The pull request was open for four of them.
+
+Not live yet: on 19 November, after the merge, the live [contact form](https://www.djangoproject.com/contact/foundation/) still renders `type="text"` with no `autocomplete`. The change reaches the site with its next deployment.
+
+What I learned: the approval that merges is the one from someone with write access. Kanishk's review in October counted, but it could not merge. Waiting four weeks for that second look is normal, not a sign that something is wrong.
+
+Next: once the site is deployed, check the form on my phone (the e-mail keyboard), in the developer tools (**F12**) and with Orca, and fill in the "After" column of [What I heard](#what-i-heard). Then delete the branch `contact-email-input-autocomplete` on my fork.
+
 ## Plan, 19 November 2026: follow #2904, do #2929
 
 Two issues on djangoproject.com, at two different stages. Issue #2904 is done on my side and waits for a maintainer. Issue #2929 starts now, with three small pull requests in an order Kanishk proposed.
@@ -118,19 +138,11 @@ Two issues on djangoproject.com, at two different stages. Issue #2904 is done on
 
 **Where it is on 19 November.** [Pull request #2924](https://github.com/django/djangoproject.com/pull/2924) is open. It changes only the two widgets in `contact/forms.py`. Kanishk approved it on 26 October, with read-only permissions. My last comment, after removing the test, has had no answer from a maintainer. The issue is still assigned to me, and my last comment there says it waits for a maintainer to merge.
 
-**What I do, and what I don't.**
-
-- [ ] Each weekend: open the pull request and look at two things only: are the checks green, and is there a new comment?
-- [ ] No new commits unless a maintainer asks. No rebase either, unless GitHub shows a conflict.
-- [ ] **28–29 November**, if nothing has moved: one short comment on the pull request, then nothing more until the end of the session. Draft:
-
-    > Hi @adamzap, the PR now only changes the two widgets in `contact/forms.py`, and the checks pass. Is there anything else you'd like me to change before it can be merged?
-
-- [ ] If there is still no answer by 5–6 December: tell my Navigator in the session wrap-up. A pull request waiting for a maintainer is a normal end to a session, not a failure.
+**Merged the same day**, so the follow-up steps planned here were not needed. See [Update, 19 November 2026: merged](#update-19-november-2026-merged).
 
 **When it is merged.**
 
-- [ ] Nothing to close by hand: the commit message starts with `Fixed #2904`, so GitHub closes the issue on merge. Check that it did.
+- [x] Nothing to close by hand: the commit message starts with `Fixed #2904`, so GitHub closes the issue on merge. Checked: closed on 19 November, via commit 95960825.
 - [ ] Once the site is deployed, check the live [contact form](https://www.djangoproject.com/contact/foundation/) three ways: the phone shows the e-mail keyboard, the developer tools (**F12**) show `type="email"` and both `autocomplete` values, and Orca. Fill in the "After" column of [What I heard](#what-i-heard) from the live site, not my branch.
 - [ ] Delete the branch `contact-email-input-autocomplete` on my fork.
 
