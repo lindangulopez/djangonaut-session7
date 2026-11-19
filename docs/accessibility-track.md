@@ -114,6 +114,8 @@ Next: wait for the checks to run again and for a maintainer to merge. The pull r
 
 Sarah Abderemane ([@sabderemane](https://github.com/sabderemane)) approved [pull request #2924](https://github.com/django/djangoproject.com/pull/2924) ("Thank you! 🎸") and merged it on 19 November 2026, at 13:34 Paris time. It is now commit [95960825](https://github.com/django/djangoproject.com/commit/95960825c3838b55938ecd6122cf018200a71595) on `main`: one file, `contact/forms.py`, two lines changed. GitHub closed [issue #2904](https://github.com/django/djangoproject.com/issues/2904) the same minute, because the commit message starts with `Fixed #2904`.
 
+![Commit 95960825 on django/djangoproject.com: the commit message, and the two changed lines in contact/forms.py, an EmailInput with autocomplete "email" and autocomplete "name" on the Name field](img/pr2924_merged.png)
+
 ```python
 email = forms.EmailField(
     widget=forms.EmailInput(attrs={"class": "required", "autocomplete": "email"}),
