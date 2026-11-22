@@ -157,7 +157,7 @@ On 19 November Kanishk answered [issue #2929](https://github.com/django/djangopr
 | Step | What | When | Gate |
 | --- | --- | --- | --- |
 | 1 | `pyproject.toml`: add `license` and `[project.urls]` | Opened 22 Nov: [#2977](https://github.com/django/djangoproject.com/pull/2977) | None: "nothing to discuss there" |
-| 2 | An outline of `CONTRIBUTING.md`, as a comment on the issue | 21–22 Nov | None |
+| 2 | An outline of `CONTRIBUTING.md`, as a comment on the issue | Posted 22 Nov: [comment](https://github.com/django/djangoproject.com/issues/2929#issuecomment-7078365942) | None |
 | 3 | `CONTRIBUTING.md`, a separate file | After we agree on the outline | The outline |
 | 4 | `codemeta.json`, generated from `pyproject.toml` | After step 1 is merged | Step 1 merged |
 | – | `AUTHORS` and `CITATION.cff` | Parked | Later, if at all |
@@ -217,6 +217,8 @@ Kanishk wants a separate file, because the README is already long, and an outlin
 > Two questions: should it ask for Django's commit message style (`Fixed #NNNN -- ...`)? And is there anything you'd add or drop?
 
 The two questions are real: I don't know whether this repository wants Django's commit style, and I should not write a rule the team has not agreed.
+
+**Update, 22 November 2026: outline posted.** I posted [the outline on issue #2929](https://github.com/django/djangoproject.com/issues/2929#issuecomment-7078365942) at 12:19 Paris time, with a link to [pull request #2977](https://github.com/django/djangoproject.com/pull/2977) for part 1. The seven points are the ones above. I kept one question, "is there anything you'd add or drop?", and left out the one about commit style: the file can link to the template, and the commit style can come up in review. Next: wait for Kanishk's answer, then write `CONTRIBUTING.md` to the shape we agree on (step 3).
 
 #### Step 4: `codemeta.json`, once step 1 is merged
 
