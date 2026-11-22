@@ -156,7 +156,7 @@ On 19 November Kanishk answered [issue #2929](https://github.com/django/djangopr
 
 | Step | What | When | Gate |
 | --- | --- | --- | --- |
-| 1 | `pyproject.toml`: add `license` and `[project.urls]` | 21–22 Nov | None: "nothing to discuss there" |
+| 1 | `pyproject.toml`: add `license` and `[project.urls]` | Opened 22 Nov: [#2977](https://github.com/django/djangoproject.com/pull/2977) | None: "nothing to discuss there" |
 | 2 | An outline of `CONTRIBUTING.md`, as a comment on the issue | 21–22 Nov | None |
 | 3 | `CONTRIBUTING.md`, a separate file | After we agree on the outline | The outline |
 | 4 | `codemeta.json`, generated from `pyproject.toml` | After step 1 is merged | Step 1 merged |
@@ -197,6 +197,8 @@ git push origin pyproject-license-urls
 ```
 
 `Refs`, not `Fixed`: the issue covers more than this pull request, so it must stay open. In the pull request template, tick the AI Assistance Disclosure box, and no co-author line in the commit (see the [24 October update](#update-24-october-2026-first-review)).
+
+**Update, 22 November 2026: pull request opened.** [Pull request #2977](https://github.com/django/djangoproject.com/pull/2977), "Refs #2929 -- Added license and project URLs to pyproject.toml.", is the diff above: one file, six lines. Before branching I synced my fork's `main` with upstream, since it was behind after the #2904 merge. `uv lock --check` passed and the lock file did not change. The pre-commit checks passed too, including `pyproject-fmt`. I am the only author of the commit, and I ticked the "AI tools were used" box in the description. On GitHub all four checks passed: tests, prek and the two image builds. I asked Kanishk and Sarah for a review. Next: answer the review, then step 2, the `CONTRIBUTING.md` outline.
 
 #### Step 2: the `CONTRIBUTING.md` outline
 
