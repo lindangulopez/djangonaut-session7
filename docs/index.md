@@ -7,6 +7,7 @@ I am a Djangonaut in [Djangonaut Space](https://djangonaut.space/), Session 7, f
 This site shows what I plan to do, week by week. It is a plan, so it will change.
 
 [![Rocky shore and the Indian Ocean on the KwaZulu-Natal South Coast. Opens my personal site](img/south-coast-sea.jpg){ style="width: 100%; aspect-ratio: 3 / 1; object-fit: cover; object-position: 45% 70%; border-radius: 12px;" }](https://lindangulopez.github.io/personal_knowledge_base/)
+<small>Photo: the Indian Ocean at Margate, on the KwaZulu-Natal South Coast, by [Bernard Dupont](https://www.flickr.com/photos/65695019@N07/54280264565) (CC BY-SA 2.0), via Flickr.</small>
 
 ## Where I start from
 
@@ -16,7 +17,8 @@ I now focus on the digital commons. Since September 2025 I have been a Partnersh
 
 Django is new to me. I use Python every day, and my Django experience so far is the contributing tutorial and one practice patch.
 
-<small>Photo: the Indian Ocean at Margate, on the KwaZulu-Natal South Coast, by [Bernard Dupont](https://www.flickr.com/photos/65695019@N07/54280264565) (CC BY-SA 2.0), via Flickr.</small>
+[![Sandstone boulders and birches in the forest of Fontainebleau. Opens my personal site](img/fontainebleau-forest.jpg){ style="width: 100%; aspect-ratio: 3 / 1; object-fit: cover; object-position: 50% 50%; border-radius: 12px;" }](https://lindangulopez.github.io/personal_knowledge_base/)
+<small>Photo: the forest of Fontainebleau by [Thesupermat](https://commons.wikimedia.org/wiki/File:Rochers_en_for%C3%AAt_de_Fontainebleau11.JPG) (CC BY-SA 3.0), via Wikimedia Commons.</small>
 
 ## What I want from the eight weeks
 
@@ -25,6 +27,9 @@ Django is new to me. I use Python every day, and my Django experience so far is 
 (ii) To make one real contribution: a reproduction, a review, a test, or a fix.
 
 (iii) To learn how a large open source community reviews work and welcomes new contributors.
+
+[![Plains zebras grazing in the bushveld of Pilanesberg National Park. Opens my personal site](img/savanna-zebras.jpg){ style="width: 100%; aspect-ratio: 3 / 1; object-fit: cover; object-position: 70% 60%; border-radius: 12px;" }](https://lindangulopez.github.io/personal_knowledge_base/)
+<small>Photo: zebras in Pilanesberg National Park by [South African Tourism](https://www.flickr.com/photos/25779097@N08/6253262246) (CC BY 2.0), via Flickr.</small>
 
 ## Three phases, tutorials first
 
@@ -44,6 +49,9 @@ The plan was to contribute only after phase 1, but issue #2904 was assigned to m
 **Accessibility.** Small tickets in the Django admin and the accessibility audit of Django's ticket tracker. This is my team's project. See [Accessibility track](accessibility-track.md).
 
 The choice between the two is open with my Navigator. Both stay on this site until it is made.
+
+[![The Eiffel Tower and the Seine, Paris. Opens my personal site](img/paris.jpg){ style="width: 100%; aspect-ratio: 3 / 1; object-fit: cover; object-position: 50% 50%; border-radius: 12px;" }](https://lindangulopez.github.io/personal_knowledge_base/)
+<small>Photo: Paris by [Yann Caradec](https://commons.wikimedia.org/wiki/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_ao%C3%BBt_2014_(2).jpg) (CC BY-SA 2.0), via Wikimedia Commons.</small>
 
 ## Status
 
