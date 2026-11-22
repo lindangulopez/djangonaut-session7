@@ -8,11 +8,15 @@ This site shows what I plan to do, week by week. It is a plan, so it will change
 
 ## Where I start from
 
-I grew up on the Wild Coast in South Africa and trained as a botanist. I am a Full Stack GIS Developer, with more than 25 years of work across Europe and Africa in environmental governance, landscape ecology and research infrastructures, including national ecological restoration programmes in South Africa.
+[![Rocky shore and the Indian Ocean on the KwaZulu-Natal South Coast](img/south-coast-sea.jpg){ align=right width="260" }](https://lindangulopez.github.io/personal_knowledge_base/assets/img/south-coast-sea.jpg)
+
+I grew up on the Wild Coast in South Africa and trained as a botanist. I am a Full Stack GIS Developer, with more than 25 years of work across Europe and Africa in environmental governance, landscape ecology and research infrastructures, including national ecological restoration programmes in South Africa. More about me on [my personal site](https://lindangulopez.github.io/personal_knowledge_base/).
 
 I now focus on the digital commons. Since September 2025 I have been a Partnerships Specialist at Software Heritage, where I work with universities, research organisations and Open Source Program Offices (OSPOs). In parallel, I take part in the Rewilding Academic Talent Program at Rewilding Portugal, with GIS and ecological connectivity analyses for landscape restoration.
 
 Django is new to me. I use Python every day, and my Django experience so far is the contributing tutorial and one practice patch.
+
+<small>Photo: the Indian Ocean at Margate, on the KwaZulu-Natal South Coast, by [Bernard Dupont](https://www.flickr.com/photos/65695019@N07/54280264565) (CC BY-SA 2.0), via Flickr.</small>
 
 ## What I want from the eight weeks
 
