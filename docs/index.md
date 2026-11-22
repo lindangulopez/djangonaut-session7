@@ -6,9 +6,9 @@ I am a Djangonaut in [Djangonaut Space](https://djangonaut.space/), Session 7, f
 
 This site shows what I plan to do, week by week. It is a plan, so it will change.
 
-## Where I start from
+[![Rocky shore and the Indian Ocean on the KwaZulu-Natal South Coast. Opens my personal site](img/south-coast-sea.jpg){ style="width: 100%; aspect-ratio: 3 / 1; object-fit: cover; object-position: 45% 70%; border-radius: 12px;" }](https://lindangulopez.github.io/personal_knowledge_base/)
 
-[![Rocky shore and the Indian Ocean on the KwaZulu-Natal South Coast](img/south-coast-sea.jpg){ align=right width="260" }](https://lindangulopez.github.io/personal_knowledge_base/assets/img/south-coast-sea.jpg)
+## Where I start from
 
 I grew up on the Wild Coast in South Africa and trained as a botanist. I am a Full Stack GIS Developer, with more than 25 years of work across Europe and Africa in environmental governance, landscape ecology and research infrastructures, including national ecological restoration programmes in South Africa. More about me on [my personal site](https://lindangulopez.github.io/personal_knowledge_base/).
 
