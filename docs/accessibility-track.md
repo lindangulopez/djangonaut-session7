@@ -218,7 +218,7 @@ Kanishk wants a separate file, because the README is already long, and an outlin
 
 The two questions are real: I don't know whether this repository wants Django's commit style, and I should not write a rule the team has not agreed.
 
-**Update, 22 November 2026: outline posted.** I posted [the outline on issue #2929](https://github.com/django/djangoproject.com/issues/2929#issuecomment-7078365942) at 12:19 Paris time, with a link to [pull request #2977](https://github.com/django/djangoproject.com/pull/2977) for part 1. The seven points are the ones above. I kept one question, "is there anything you'd add or drop?", and left out the one about commit style: the file can link to the template, and the commit style can come up in review. Next: wait for Kanishk's answer, then write `CONTRIBUTING.md` to the shape we agree on (step 3).
+**Update, 22 November 2026: outline posted.** I posted [the outline on issue #2929](https://github.com/django/djangoproject.com/issues/2929#issuecomment-7078365942) at 12:19 Paris time, with a link to [pull request #2977](https://github.com/django/djangoproject.com/pull/2977) for part 1. The seven points are the ones above. I kept one question, "is there anything you'd add or drop?", and left out the one about commit style. Next: wait for Kanishk's answer, then write `CONTRIBUTING.md` to the shape we agree on (step 3).
 
 #### Step 4: `codemeta.json`, once step 1 is merged
 
