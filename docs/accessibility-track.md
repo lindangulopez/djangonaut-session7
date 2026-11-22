@@ -128,6 +128,8 @@ I am the only author of the commit, with no co-author line; the AI use is disclo
 
 Not live yet: on 19 November, after the merge, the live [contact form](https://www.djangoproject.com/contact/foundation/) still renders `type="text"` with no `autocomplete`. The change reaches the site with its next deployment.
 
+Checked again on 22 November, 11:44 Paris time: still not live. The page came straight from the server, not from a cached copy, and the two inputs are unchanged. The merge itself worked: all the checks passed, and GitHub built and published the new Docker image the same day. But merging to `main` does not update the site. The Django ops team deploys separately, and the repository gives no schedule for it. My commit is still the latest on `main`, so the site may simply not have been deployed since. I will check again in a couple of days.
+
 What I learned: the approval that merges is the one from someone with write access. Kanishk's review in October counted, but it could not merge. Waiting four weeks for that second look is normal, not a sign that something is wrong.
 
 Next: once the site is deployed, check the form on my phone (the e-mail keyboard), in the developer tools (**F12**) and with Orca, and fill in the "After" column of [What I heard](#what-i-heard). Then delete the branch `contact-email-input-autocomplete` on my fork.
